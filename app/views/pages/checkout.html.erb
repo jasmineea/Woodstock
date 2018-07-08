@@ -10,7 +10,7 @@
                     <div class="search-content">
                         <form action="#" method="get">
                             <input type="search" name="search" id="search" placeholder="Type your keyword...">
-                            <button type="submit"><img src="img/core-img/search.png" alt=""></button>
+                            <button type="submit"><%= image_tag 'search.png', alt:'' %></button>
                         </form>
                     </div>
                 </div>
@@ -26,7 +26,7 @@
         <div class="mobile-nav">
             <!-- Navbar Brand -->
             <div class="amado-navbar-brand">
-                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                <a href="index.html"><%= image_tag 'logo.png', alt: '' %></a>
             </div>
             <!-- Navbar Toggler -->
             <div class="amado-navbar-toggler">
@@ -38,11 +38,11 @@
         <header class="header-area clearfix">
             <!-- Close Icon -->
             <div class="nav-close">
-                <i class="fa fa-close" aria-hidden="true"></i>
+                <i class="fas fa-close" aria-hidden="true"></i>
             </div>
             <!-- Logo -->
             <div class="logo">
-                <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                <a href="index.html"><%= image_tag 'logo.png', alt: '' %></a>
             </div>
             <!-- Amado Nav -->
             <nav class="amado-nav">
@@ -56,21 +56,21 @@
             </nav>
             <!-- Button Group -->
             <div class="amado-btn-group mt-30 mb-100">
-                <a href="#" class="btn amado-btn mb-15">%Discount%</a>
+                <a href="#" class="btn amado-btn mb-15">Shop now</a>
                 <a href="#" class="btn amado-btn active">New this week</a>
             </div>
             <!-- Cart Menu -->
             <div class="cart-fav-search mb-100">
-                <a href="cart.html" class="cart-nav"><img src="img/core-img/cart.png" alt=""> Cart <span>(0)</span></a>
+                <a href="cart.html" class="cart-nav"><%= image_tag 'cart.png', alt: '' %> Cart <span>(0)</span></a>
                 <a href="#" class="fav-nav"><img src="img/core-img/favorites.png" alt=""> Favourite</a>
                 <a href="#" class="search-nav"><img src="img/core-img/search.png" alt=""> Search</a>
             </div>
             <!-- Social Button -->
             <div class="social-info d-flex justify-content-between">
-                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
             </div>
         </header>
         <!-- Header Area End -->
@@ -159,7 +159,7 @@
                                 <!-- Paypal -->
                                 <div class="custom-control custom-checkbox mr-sm-2">
                                     <input type="checkbox" class="custom-control-input" id="paypal">
-                                    <label class="custom-control-label" for="paypal">Paypal <img class="ml-15" src="img/core-img/paypal.png" alt=""></label>
+                                    <label class="custom-control-label" for="paypal">Paypal <%= image_tag 'paypal.png', alt: '' %></label>
                                 </div>
                             </div>
 
@@ -208,12 +208,11 @@
                     <div class="single_widget_area">
                         <!-- Logo -->
                         <div class="footer-logo mr-50">
-                            <a href="index.html"><img src="img/core-img/logo2.png" alt=""></a>
+                            <a href="index.html"><%= image_tag 'logo2.png', alt: '' %></a>
                         </div>
                         <!-- Copywrite Text -->
-                        <p class="copywrite"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        <p class="copywrite">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script>
                     </div>
                 </div>
                 <!-- Single Widget Area -->
@@ -251,6 +250,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </footer>
     <!-- ##### Footer Area End ##### -->
 
+
     <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
@@ -264,4 +264,3 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 </body>
 
-</html>
