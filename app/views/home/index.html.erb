@@ -23,16 +23,34 @@
     <div class="main-content-wrapper d-flex clearfix">
 
         <!-- Mobile Nav (max width 767px)-->
+        
         <div class="mobile-nav">
             <!-- Navbar Brand -->
             <div class="amado-navbar-brand">
                 <a href="index.html"><%= image_tag'logo.png', alt: '' %></a>
             </div>
             <!-- Navbar Toggler -->
-            <div class="amado-navbar-toggler">
-                <span></span><span></span><span></span>
-            </div>
+           
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="p-4">
+      <ul>
+                    <li><%= link_to 'Home', root_path('index') %></li>
+                    <li><%= link_to 'Shop', page_path('shop') %></li>
+                    <li><%= link_to 'Product', page_path('product') %></li>
+                    <li><%= link_to 'Cart', page_path('cart') %></li>
+                    <li><%= link_to 'Checkout', page_path('checkout') %></li>
+                </ul>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
         </div>
+       
 
         <!-- Header Area Start -->
         <header class="header-area clearfix">
@@ -45,7 +63,7 @@
                 <a href="index.html"><%= image_tag 'logo.png', alt: '' %></a>
             </div>
             <!-- Woodstock Nav -->
-            <nav class="amado-nav">
+            <nav class="amado-nav collapse" id="navbarToggleExternalContent">
                 <ul>
                     <li><%= link_to 'Home', root_path('index') %></li>
                     <li><%= link_to 'Shop', page_path('shop') %></li>
@@ -303,15 +321,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script>
 
 
     <!-- ##### jQuery (Necessary for All JavaScript Plugins) ##### -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    
+    java
+  <script src="javascript/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
-    <script src="js/popper.min.js"></script>
+    <script src="javascript/popper.min.js"></script>
     <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
     <!-- Plugins js -->
-    <script src="js/plugins.js"></script>
+    <script src="javascript/plugins.js"></script>
     <!-- Active js -->
-    <script src="js/active.js"></script>
+    <script src="javascript/active.js"></script>
 
 </body>
 

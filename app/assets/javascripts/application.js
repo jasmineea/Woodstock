@@ -15,3 +15,7 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+//= require popper.min
+//= require bootstrap.min
+//= require active
+//= require plugins
